@@ -12,15 +12,3 @@ language = "python3"
 [deployment]
 run = ["python3", "main.py"]
 deploymentTarget = "cloudrun"
-
-[workflows]
-runButton = "Start React App"
-
-[[workflows.workflow]]
-name = "Start React App"
-author = 44444207
-mode = "sequential"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npm start"
